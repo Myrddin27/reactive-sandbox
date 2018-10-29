@@ -6,6 +6,8 @@ It implements a small Docker image containing common dependencies for running [L
 
 * Cassandra
 * Elasticsearch
+* Logstash
+* Kibana
 * Kafka
 * ZooKeeper
 
@@ -45,6 +47,14 @@ If set to `0`, Cassandra will not be started.
 
 If set to `0`, Elasticsearch will not be started.
 
+**RS_ENABLE_LOGSTASH**
+
+If set to `0`, Logstash will not be started.
+
+**RS_ENABLE_KIBANA**
+
+If set to `0`, Kibana will not be started.
+
 **RS_ENABLE_KAFKA**
 
 If set to `0`, Kafka will not be started.
@@ -60,6 +70,14 @@ Declares heap size for Cassandra. Defaults to 256.
 **RS_ELASTICSEARCH_HEAP**
 
 Declares heap size for Elasticsearch. Defaults to 128.
+
+**RS_LOGSTASH_HEAP**
+
+Declares heap size for Logstash. Defaults to 128.
+
+**RS_KIBANA_HEAP**
+
+Declares heap size for Kibana. Defaults to 128.
 
 **RS_KAFKA_HEAP**
 
